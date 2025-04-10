@@ -6,7 +6,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
     cors: {
-        origin: "*", // In production, specify your actual domain
+        origin: "https://enzosync.com",  // Replace with your frontend domain
         methods: ["GET", "POST"]
     }
 });
